@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 
+const newLocal = 'public/Photos/Projects/Current/1-Rose-bush/01.jpg';
 // --- Data for the artwork ---
 const allArtwork = [
     // --- Current Projects ---
@@ -7,35 +8,35 @@ const allArtwork = [
         id: 1,
         title: 'Rose bush',
         year: '2024',
-        imageUrl: 'public/Photos/Projects/Current/1-Rose bush/01.jpg',
+        imageUrl: 'public/Photos/Projects/Current/1-Rose-bush/01.jpg',
         category: 'Current',
         description: 'Description for Rose bush project.',
         // To add YouTube videos, uncomment the line below and replace the IDs
         // youtubeVideoIds: ['YOUTUBE_ID_1'],
         // To add local videos, uncomment the line below and add the file paths
-        // localVideos: ['/Photos/Projects/Current/1-Rose bush/video.mp4'],
+        // localVideos: ['/Photos/Projects/Current/-video.mp4'],
         images: [
-            'public/Photos/Projects/Current/1-Rose bush/01.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/02.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/03.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/04.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/05.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/06.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/07.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/08.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/09.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/010.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/011.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/012.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/013.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/014.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/015.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/016.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/017.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/018.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/019.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/020.jpg',
-            'public/Photos/Projects/Current/1-Rose bush/021.jpg',
+            newLocal,
+            'public/Photos/Projects/Current/1-Rose-bush/02.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/03.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/04.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/05.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/06.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/07.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/08.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/09.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/010.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/011.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/012.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/013.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/014.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/015.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/016.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/017.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/018.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/019.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/020.jpg',
+            'public/Photos/Projects/Current/1-Rose-bush/021.jpg',
         ]
     },
     {

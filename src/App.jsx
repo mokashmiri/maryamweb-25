@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 
-const newLocal = 'public/Photos/Projects/Current/1-Rose-bush/01.jpg';
+const newLocal = '/Photos/Projects/Current/Rosebush/01.jpg';
 // --- Data for the artwork ---
 const allArtwork = [
     // --- Current Projects ---
@@ -8,7 +8,7 @@ const allArtwork = [
         id: 1,
         title: 'Rose bush',
         year: '2024',
-        imageUrl: 'public/Photos/Projects/Current/1-Rose-bush/01.jpg',
+        imageUrl: '/Photos/Projects/Current/Rosebush/01.jpg',
         category: 'Current',
         description: 'Description for Rose bush project.',
         // To add YouTube videos, uncomment the line below and replace the IDs
@@ -17,63 +17,63 @@ const allArtwork = [
         // localVideos: ['/Photos/Projects/Current/-video.mp4'],
         images: [
             newLocal,
-            'public/Photos/Projects/Current/1-Rose-bush/02.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/03.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/04.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/05.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/06.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/07.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/08.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/09.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/010.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/011.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/012.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/013.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/014.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/015.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/016.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/017.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/018.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/019.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/020.jpg',
-            'public/Photos/Projects/Current/1-Rose-bush/021.jpg',
+            '/Photos/Projects/Current/Rosebush/02.jpg',
+            '/Photos/Projects/Current/Rosebush/03.jpg',
+            '/Photos/Projects/Current/Rosebush/04.jpg',
+            '/Photos/Projects/Current/Rosebush/05.jpg',
+            '/Photos/Projects/Current/Rosebush/06.jpg',
+            '/Photos/Projects/Current/Rosebush/07.jpg',
+            '/Photos/Projects/Current/Rosebush/08.jpg',
+            '/Photos/Projects/Current/Rosebush/09.jpg',
+            '/Photos/Projects/Current/Rosebush/010.jpg',
+            '/Photos/Projects/Current/Rosebush/011.jpg',
+            '/Photos/Projects/Current/Rosebush/012.jpg',
+            '/Photos/Projects/Current/Rosebush/013.jpg',
+            '/Photos/Projects/Current/Rosebush/014.jpg',
+            '/Photos/Projects/Current/Rosebush/015.jpg',
+            '/Photos/Projects/Current/Rosebush/016.jpg',
+            '/Photos/Projects/Current/Rosebush/017.jpg',
+            '/Photos/Projects/Current/Rosebush/018.jpg',
+            '/Photos/Projects/Current/Rosebush/019.jpg',
+            '/Photos/Projects/Current/Rosebush/020.jpg',
+            '/Photos/Projects/Current/Rosebush/021.jpg',
         ]
     },
     {
         id: 2,
         title: 'Inside',
         year: '2024',
-        imageUrl: 'public/Photos/Projects/Current/2-Inside/01.jpg',
+        imageUrl: '/Photos/Projects/Current/Inside/01.jpg',
         category: 'Current',
         description: 'Description for Inside project.',
         // To add YouTube videos, uncomment the line below and replace the IDs
         // youtubeVideoIds: ['YOUTUBE_ID_1'],
         //localVideos: ['/Photos/Projects/Current/2-Inside/video.mp4']
         images: [
-            'public/Photos/Projects/Current/2-Inside/01.jpg',
-            'public/Photos/Projects/Current/2-Inside/02.jpg',
-            'public/Photos/Projects/Current/2-Inside/03.jpg',
-            'public/Photos/Projects/Current/2-Inside/04.jpg',
-            'public/Photos/Projects/Current/2-Inside/05.jpg',
-            'public/Photos/Projects/Current/2-Inside/06.jpg',
-            'public/Photos/Projects/Current/2-Inside/07.jpg',
-            'public/Photos/Projects/Current/2-Inside/08.jpg',
-            'public/Photos/Projects/Current/2-Inside/09.jpg',
-            'public/Photos/Projects/Current/2-Inside/010.jpg',
-            'public/Photos/Projects/Current/2-Inside/011.jpg',
-            'public/Photos/Projects/Current/2-Inside/012.jpg',
-            'public/Photos/Projects/Current/2-Inside/013.jpg',
-            'public/Photos/Projects/Current/2-Inside/014.jpg',
-            'public/Photos/Projects/Current/2-Inside/015.jpg',
-            'public/Photos/Projects/Current/2-Inside/016.jpg',
-            'public/Photos/Projects/Current/2-Inside/017.jpg',
+            '/Photos/Projects/Current/Inside/01.jpg',
+            '/Photos/Projects/Current/Inside/02.jpg',
+            '/Photos/Projects/Current/Inside/03.jpg',
+            '/Photos/Projects/Current/Inside/04.jpg',
+            '/Photos/Projects/Current/Inside/05.jpg',
+            '/Photos/Projects/Current/Inside/06.jpg',
+            '/Photos/Projects/Current/Inside/07.jpg',
+            '/Photos/Projects/Current/Inside/08.jpg',
+            '/Photos/Projects/Current/Inside/09.jpg',
+            '/Photos/Projects/Current/Inside/010.jpg',
+            '/Photos/Projects/Current/Inside/011.jpg',
+            '/Photos/Projects/Current/Inside/012.jpg',
+            '/Photos/Projects/Current/Inside/013.jpg',
+            '/Photos/Projects/Current/Inside/014.jpg',
+            '/Photos/Projects/Current/Inside/015.jpg',
+            '/Photos/Projects/Current/Inside/016.jpg',
+            '/Photos/Projects/Current/Inside/017.jpg',
         ]
     },
     {
         id: 3,
         title: 'Leyers',
         year: '2024',
-        imageUrl: 'public/Photos/Projects/Current/3-Leyers/01.jpg',
+        imageUrl: '/Photos/Projects/Current/Leyers/01.jpg',
         category: 'Current',
         description: 'Description for Leyer-s project.',
         // To add YouTube videos, uncomment the line below and replace the IDs
@@ -81,31 +81,31 @@ const allArtwork = [
         // To add local videos, uncomment the line below and add the file paths
         // localVideos: ['/Photos/Projects/Current/3-Leyers/video.mp4'],
         images: [
-            'public/Photos/Projects/Current/3-Leyers/01.jpg',
-            'public/Photos/Projects/Current/3-Leyers/02.jpg',
-            'public/Photos/Projects/Current/3-Leyers/03.jpg',
-            'public/Photos/Projects/Current/3-Leyers/04.jpg',
-            'public/Photos/Projects/Current/3-Leyers/05.jpg',
-            'public/Photos/Projects/Current/3-Leyers/06.jpg',
-            'public/Photos/Projects/Current/3-Leyers/07.jpg',
-            'public/Photos/Projects/Current/3-Leyers/08.jpg',
-            'public/Photos/Projects/Current/3-Leyers/09.jpg',
-            'public/Photos/Projects/Current/3-Leyers/010.jpg',
-            'public/Photos/Projects/Current/3-Leyers/011.jpg',
-            'public/Photos/Projects/Current/3-Leyers/012.jpg',
-            'public/Photos/Projects/Current/3-Leyers/013.jpg',
-            'public/Photos/Projects/Current/3-Leyers/014.jpg',
-            'public/Photos/Projects/Current/3-Leyers/015.jpg',
-            'public/Photos/Projects/Current/3-Leyers/016.jpg',
-            'public/Photos/Projects/Current/3-Leyers/017.jpg',
-            'public/Photos/Projects/Current/3-Leyers/018.jpg',
+            '/Photos/Projects/Current/Leyers/01.jpg',
+            '/Photos/Projects/Current/Leyers/02.jpg',
+            '/Photos/Projects/Current/Leyers/03.jpg',
+            '/Photos/Projects/Current/Leyers/04.jpg',
+            '/Photos/Projects/Current/Leyers/05.jpg',
+            '/Photos/Projects/Current/Leyers/06.jpg',
+            '/Photos/Projects/Current/Leyers/07.jpg',
+            '/Photos/Projects/Current/Leyers/08.jpg',
+            '/Photos/Projects/Current/Leyers/09.jpg',
+            '/Photos/Projects/Current/Leyers/010.jpg',
+            '/Photos/Projects/Current/Leyers/011.jpg',
+            '/Photos/Projects/Current/Leyers/012.jpg',
+            '/Photos/Projects/Current/Leyers/013.jpg',
+            '/Photos/Projects/Current/Leyers/014.jpg',
+            '/Photos/Projects/Current/Leyers/015.jpg',
+            '/Photos/Projects/Current/Leyers/016.jpg',
+            '/Photos/Projects/Current/Leyers/017.jpg',
+            '/Photos/Projects/Current/Leyers/018.jpg',
         ]
     },
         {
         id: 6,
         title: 'Privacy',
         year: '2018',
-        imageUrl: 'public/Photos/Projects/Archive/Privacy/05.jpg',
+        imageUrl: '/Photos/Projects/Archive/Privacy/05.jpg',
         category: 'Archive',
         description: 'A study of personal space and boundaries in the modern world.',
         // To add YouTube videos, uncomment the line below and replace the IDs
@@ -113,12 +113,12 @@ const allArtwork = [
         // To add local videos, uncomment the line below and add the file paths
         // localVideos: ['/Photos/Projects/Archive/Privacy/video.mp4'],
         images: [
-            'public/Photos/Projects/Archive/Privacy/01.jpg',
-            'public/Photos/Projects/Archive/Privacy/02.jpg',
-            'public/Photos/Projects/Archive/Privacy/03.jpg',
-            'public/Photos/Projects/Archive/Privacy/04.jpg',
-            'public/Photos/Projects/Archive/Privacy/05.jpg',
-            'public/Photos/Projects/Archive/Privacy/06.jpg',
+            '/Photos/Projects/Archive/Privacy/01.jpg',
+            '/Photos/Projects/Archive/Privacy/02.jpg',
+            '/Photos/Projects/Archive/Privacy/03.jpg',
+            '/Photos/Projects/Archive/Privacy/04.jpg',
+            '/Photos/Projects/Archive/Privacy/05.jpg',
+            '/Photos/Projects/Archive/Privacy/06.jpg',
         ]
     },
 
@@ -127,46 +127,46 @@ const allArtwork = [
         id: 4,
         title: 'Eating and Being eaten',
         year: '2018',
-        imageUrl: 'public/Photos/Projects/Archive/eating and being eaten-1/01.jpg',
+        imageUrl: '/Photos/Projects/Archive/Eating/01.jpg',
         category: 'Archive',
         description: 'A project exploring themes of consumption and existence.',
         // To add YouTube videos, uncomment the line below and replace the IDs
         // youtubeVideoIds: ['YOUTUBE_ID_1'],
         // To add local videos, uncomment the line below and add the file paths
-        // localVideos: ['/Photos/Projects/Archive/eating and being eaten-1/video.mp4'],
+        // localVideos: ['/Photos/Projects/Archive/Eating/video.mp4'],
         images: [
-            'public/Photos/Projects/Archive/eating and being eaten-1/01.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/02.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/03.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/04.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/05.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/06.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/07.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/08.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/09.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/010.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/011.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/012.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/013.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/014.jpg',
-            'public/Photos/Projects/Archive/eating and being eaten-1/015.jpg',
+            '/Photos/Projects/Archive/Eating/01.jpg',
+            '/Photos/Projects/Archive/Eating/02.jpg',
+            '/Photos/Projects/Archive/Eating/03.jpg',
+            '/Photos/Projects/Archive/Eating/04.jpg',
+            '/Photos/Projects/Archive/Eating/05.jpg',
+            '/Photos/Projects/Archive/Eating/06.jpg',
+            '/Photos/Projects/Archive/Eating/07.jpg',
+            '/Photos/Projects/Archive/Eating/08.jpg',
+            '/Photos/Projects/Archive/Eating/09.jpg',
+            '/Photos/Projects/Archive/Eating/010.jpg',
+            '/Photos/Projects/Archive/Eating/011.jpg',
+            '/Photos/Projects/Archive/Eating/012.jpg',
+            '/Photos/Projects/Archive/Eating/013.jpg',
+            '/Photos/Projects/Archive/Eating/014.jpg',
+            '/Photos/Projects/Archive/Eating/015.jpg',
         ]
     },
     {
         id: 5,
         title: 'Flat land',
         year: '2020',
-        imageUrl: 'public/Photos/Projects/Archive/flat land/01.jpg',
+        imageUrl: '/Photos/Projects/Archive/Flatland/01.jpg',
         category: 'Archive',
         description: 'An exploration of landscapes and perception.',
         // To add YouTube videos, uncomment the line below and replace the IDs
         // youtubeVideoIds: ['YOUTUBE_ID_1'],
-        localVideos: ['public/Photos/Projects/Archive/flat land/vid1.mp4'],
+        localVideos: ['/Photos/Projects/Archive/Flatland/vid1.mp4'],
         images: [
-            'public/Photos/Projects/Archive/flat land/01.jpg',
-            'public/Photos/Projects/Archive/flat land/02.jpg',
-            'public/Photos/Projects/Archive/flat land/03.jpg',
-            'public/Photos/Projects/Archive/flat land/04.jpg',
+            '/Photos/Projects/Archive/Flatland/01.jpg',
+            '/Photos/Projects/Archive/Flatland/02.jpg',
+            '/Photos/Projects/Archive/Flatland/03.jpg',
+            '/Photos/Projects/Archive/Flatland/04.jpg',
         ]
     },
 ];
@@ -426,7 +426,7 @@ export default function App() {
     const [lightboxStartIndex, setLightboxStartIndex] = useState(null);
     const [studioLightboxIndex, setStudioLightboxIndex] = useState(null);
 
-    const studioImages = ['public/Photos/Studio/02.jpg', 'public/Photos/Studio/04.jpg'];
+    const studioImages = ['/Photos/Studio/02.jpg', '/Photos/Studio/04.jpg'];
 
     const filteredArtwork = useMemo(() => {
         if (filter === 'all') return allArtwork;
@@ -451,10 +451,10 @@ export default function App() {
                         <div className="flex flex-col md:flex-row gap-8 items-start">
                             <div className="md:w-1/2 grid grid-cols-2 gap-4">
                                 <div className="aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden cursor-pointer" onClick={() => setStudioLightboxIndex(0)}>
-                                    <img src="public/Photos/Studio/02.jpg" alt="Studio view 1" className="w-full h-full object-cover object-center"/>
+                                    <img src="/Photos/Studio/02.jpg" alt="Studio view 1" className="w-full h-full object-cover object-center"/>
                                 </div>
                                 <div className="aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden cursor-pointer" onClick={() => setStudioLightboxIndex(1)}>
-                                    <img src="public/Photos/Studio/04.jpg" alt="Studio view 2" className="w-full h-full object-cover object-center"/>
+                                    <img src="/Photos/Studio/04.jpg" alt="Studio view 2" className="w-full h-full object-cover object-center"/>
                                 </div>
                                 {/* Placeholders for more images/videos */}
                                 <div className="bg-gray-200 rounded-lg aspect-w-1 aspect-h-1"></div>

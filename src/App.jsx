@@ -27,16 +27,11 @@ const allArtwork = [
             './Photos/Projects/Current/Rosebush/09.jpg',
             './Photos/Projects/Current/Rosebush/010.jpg',
             './Photos/Projects/Current/Rosebush/011.jpg',
-            './Photos/Projects/Current/Rosebush/012.jpg',
             './Photos/Projects/Current/Rosebush/013.jpg',
             './Photos/Projects/Current/Rosebush/014.jpg',
             './Photos/Projects/Current/Rosebush/015.jpg',
-            './Photos/Projects/Current/Rosebush/016.jpg',
-            './Photos/Projects/Current/Rosebush/017.jpg',
             './Photos/Projects/Current/Rosebush/018.jpg',
-            './Photos/Projects/Current/Rosebush/019.jpg',
             './Photos/Projects/Current/Rosebush/020.jpg',
-            './Photos/Projects/Current/Rosebush/021.jpg',
         ]
     },
     {
@@ -154,7 +149,7 @@ const allArtwork = [
     },
     {
         id: 5,
-        title: 'Flat land',
+        title: 'Encountering',
         year: '2020',
         imageUrl: './Photos/Projects/Archive/Flatland/01.jpg',
         category: 'Archive',

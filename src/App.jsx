@@ -66,7 +66,7 @@ const allArtwork = [
     },
     {
         id: 3,
-        title: 'Leyers',
+        title: 'Layers',
         year: '2024',
         imageUrl: './Photos/Projects/Current/Leyers/01.jpg',
         category: 'Current',

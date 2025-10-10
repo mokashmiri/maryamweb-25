@@ -12,7 +12,7 @@ const allArtwork = [
         category: 'Current',
         description: 'Description for Rose bush project.',
         // To add YouTube videos, uncomment the line below and replace the IDs
-        // youtubeVideoIds: ['YOUTUBE_ID_1'],
+        youtubeVideoIds: ['ixTNBstU7ZY', 'ziY3TN7R-ao'],
         // To add local videos, uncomment the line below and add the file paths
         // localVideos: ['./Photos/Projects/Current/-video.mp4'],
         images: [
@@ -42,7 +42,7 @@ const allArtwork = [
         category: 'Current',
         description: 'Description for Inside project.',
         // To add YouTube videos, uncomment the line below and replace the IDs
-        // youtubeVideoIds: ['YOUTUBE_ID_1'],
+        youtubeVideoIds: ['tRTScR9hi0Q'],
         //localVideos: ['./Photos/Projects/Current/2-Inside/video.mp4']
         images: [
             './Photos/Projects/Current/Inside/01.jpg',
@@ -72,7 +72,7 @@ const allArtwork = [
         category: 'Current',
         description: 'Description for Leyer-s project.',
         // To add YouTube videos, uncomment the line below and replace the IDs
-        // youtubeVideoIds: ['YOUTUBE_ID_1'],
+        youtubeVideoIds: ['aUvL3Rvcoho'],
         // To add local videos, uncomment the line below and add the file paths
         // localVideos: ['./Photos/Projects/Current/3-Leyers/video.mp4'],
         images: [
@@ -127,7 +127,7 @@ const allArtwork = [
         category: 'Archive',
         description: 'A project exploring themes of consumption and existence.',
         // To add YouTube videos, uncomment the line below and replace the IDs
-        // youtubeVideoIds: ['YOUTUBE_ID_1'],
+        youtubeVideoIds: ['OL1yjthqsgk'],
         // To add local videos, uncomment the line below and add the file paths
         // localVideos: ['./Photos/Projects/Archive/Eating/video.mp4'],
         images: [
@@ -156,8 +156,8 @@ const allArtwork = [
         category: 'Archive',
         description: 'An exploration of landscapes and perception.',
         // To add YouTube videos, uncomment the line below and replace the IDs
-        // youtubeVideoIds: ['YOUTUBE_ID_1'],
-        localVideos: ['./Photos/Projects/Archive/Flatland/vid1.mp4'],
+        youtubeVideoIds: ['vgxLeBk8_Lc'],
+        //localVideos: ['./Photos/Projects/Archive/Flatland/vid1.mp4'],
         images: [
             './Photos/Projects/Archive/Flatland/01.jpg',
             './Photos/Projects/Archive/Flatland/02.jpg',

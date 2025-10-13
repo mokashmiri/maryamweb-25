@@ -127,7 +127,7 @@ const allArtwork = [
         category: 'Archive',
         description: 'A project exploring themes of consumption and existence.',
         // To add YouTube videos, uncomment the line below and replace the IDs
-        youtubeVideoIds: ['OL1yjthqsgk'],
+        youtubeVideoIds: ['OL1yjthqsgk', '-Xz6_6oipFE'],
         // To add local videos, uncomment the line below and add the file paths
         // localVideos: ['./Photos/Projects/Archive/Eating/video.mp4'],
         images: [

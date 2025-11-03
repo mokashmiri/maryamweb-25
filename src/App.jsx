@@ -11,6 +11,8 @@ const allArtwork = [
         imageUrl: './Photos/Projects/Current/Rosebush/01.jpg',
         category: 'Current',
         description: 'Description for Rose bush project.',
+        medium: '', // e.g., "conté, charcoal, pastel, acrylic on mylar"
+        dimensions: '', // e.g., "18 × 16 in"
         // To add YouTube videos, uncomment the line below and replace the IDs
         youtubeVideoIds: ['ixTNBstU7ZY', 'ziY3TN7R-ao'],
         // To add local videos, uncomment the line below and add the file paths
@@ -41,6 +43,8 @@ const allArtwork = [
         imageUrl: './Photos/Projects/Current/Inside/01.jpg',
         category: 'Current',
         description: 'Description for Inside project.',
+        medium: '', // fill later
+        dimensions: '', // fill later
         // To add YouTube videos, uncomment the line below and replace the IDs
         youtubeVideoIds: ['tRTScR9hi0Q'],
         //localVideos: ['./Photos/Projects/Current/2-Inside/video.mp4']
@@ -71,6 +75,8 @@ const allArtwork = [
         imageUrl: './Photos/Projects/Current/Leyers/01.jpg',
         category: 'Current',
         description: 'Description for Leyer-s project.',
+        medium: '', // fill later
+        dimensions: '', // fill later
         // To add YouTube videos, uncomment the line below and replace the IDs
         youtubeVideoIds: ['aUvL3Rvcoho'],
         // To add local videos, uncomment the line below and add the file paths
@@ -103,6 +109,8 @@ const allArtwork = [
         imageUrl: './Photos/Projects/Archive/Privacy/05.jpg',
         category: 'Archive',
         description: 'A study of personal space and boundaries in the modern world.',
+        medium: '', // fill later
+        dimensions: '', // fill later
         // To add YouTube videos, uncomment the line below and replace the IDs
         // youtubeVideoIds: ['YOUTUBE_ID_1'],
         // To add local videos, uncomment the line below and add the file paths
@@ -125,6 +133,8 @@ const allArtwork = [
         imageUrl: './Photos/Projects/Archive/Eating/01.jpg',
         category: 'Archive',
         description: 'A project exploring themes of consumption and existence.',
+        medium: '', // fill later
+        dimensions: '', // fill later
         // To add YouTube videos, uncomment the line below and replace the IDs
         youtubeVideoIds: ['OL1yjthqsgk', '-Xz6_6oipFE'],
         // To add local videos, uncomment the line below and add the file paths
@@ -154,6 +164,8 @@ const allArtwork = [
         imageUrl: './Photos/Projects/Archive/Flatland/01.jpg',
         category: 'Archive',
         description: 'An exploration of landscapes and perception.',
+        medium: '', // fill later
+        dimensions: '', // fill later
         // To add YouTube videos, uncomment the line below and replace the IDs
         youtubeVideoIds: ['vgxLeBk8_Lc'],
         //localVideos: ['./Photos/Projects/Archive/Flatland/vid1.mp4'],
@@ -375,12 +387,17 @@ const Lightbox = ({ images, startIndex, onClose }) => {
             <img src={images[currentIndex]} alt="Fullscreen artwork" className="max-h-[90vh] max-w-[90vw] object-contain" />
             {/**
              * Caption placeholder (intentionally disabled for now)
-             * When ready, replace with real metadata per artwork, e.g.:
+             * When ready, enable a caption bar for ALL projects using project-level metadata:
              *
              * <div className="max-w-[96vw] mx-auto mt-2 text-center text-gray-200">
-             *   <div className="text-white font-semibold">Title, Year</div>
-             *   <div className="text-sm opacity-90 mt-1">Medium · Dimensions</div>
+             *   <div className="text-white font-semibold">{selectedArtwork.title}{selectedArtwork.year ? `, ${selectedArtwork.year}` : ''}</div>
+             *   <div className="text-sm opacity-90 mt-1">{selectedArtwork.medium} · {selectedArtwork.dimensions}</div>
              * </div>
+             *
+             * To customize per IMAGE instead, add `imageMeta: [{ medium, dimensions }, ...]`
+             * to each project (matching the order of `images`) and use:
+             *   const meta = selectedArtwork.imageMeta?.[currentIndex];
+             *   meta?.medium, meta?.dimensions
              */}
             <button onClick={handleNext} className="absolute right-4 text-white text-4xl font-bold">&#8250;</button>
         </div>

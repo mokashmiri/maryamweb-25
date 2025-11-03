@@ -120,6 +120,7 @@ const allArtwork = [
         // To add local videos, uncomment the line below and add the file paths
         // localVideos: ['./Photos/Projects/Archive/Privacy/video.mp4'],
         images: [
+            './Photos/Projects/Archive/Privacy/00.jpg',
             './Photos/Projects/Archive/Privacy/01.jpg',
             './Photos/Projects/Archive/Privacy/02.jpg',
             './Photos/Projects/Archive/Privacy/03.jpg',

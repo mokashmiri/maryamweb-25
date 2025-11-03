@@ -43,8 +43,8 @@ const allArtwork = [
         imageUrl: './Photos/Projects/Current/Inside/01.jpg',
         category: 'Current',
         description: 'Description for Inside project.',
-        medium: '', // fill later
-        dimensions: '', // fill later
+        medium: 'plyester, acrylic, latex on canvas', // fill later
+        dimensions: '18 × 16 in', // fill later
         // To add YouTube videos, uncomment the line below and replace the IDs
         youtubeVideoIds: ['tRTScR9hi0Q'],
         //localVideos: ['./Photos/Projects/Current/2-Inside/video.mp4']
@@ -384,10 +384,10 @@ const Lightbox = ({ images, startIndex, onClose, artwork }) => {
         <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50">
             <button onClick={onClose} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
             <button onClick={handlePrev} className="absolute left-4 text-white text-4xl font-bold">&#8249;</button>
-            <img src={images[currentIndex]} alt="Fullscreen artwork" className="max-h-[82vh] max-w-[90vw] object-contain" />
-            {artwork && (
-                <div className="absolute bottom-8 left-1/2 -translate-x-1/2 max-w-[96vw] text-center px-4">
-                    <div className="inline-block text-gray-300 bg-black/60 rounded-md px-4 py-3">
+            <div className="w-[96vw] flex flex-col items-center justify-center">
+                <img src={images[currentIndex]} alt="Fullscreen artwork" className="max-h-[82vh] max-w-[90vw] object-contain" />
+                {artwork && (
+                    <div className="mt-3 text-center text-gray-300 bg-black/60 rounded-md px-4 py-3">
                         {artwork.year && (
                             <div className="text-base leading-tight">{artwork.year}</div>
                         )}
@@ -398,8 +398,8 @@ const Lightbox = ({ images, startIndex, onClose, artwork }) => {
                             <div className="mt-1 text-sm leading-snug">{artwork.dimensions}</div>
                         )}
                     </div>
-                </div>
-            )}
+                )}
+            </div>
             <button onClick={handleNext} className="absolute right-4 text-white text-4xl font-bold">&#8250;</button>
         </div>
     );

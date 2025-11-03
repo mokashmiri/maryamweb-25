@@ -11,8 +11,9 @@ const allArtwork = [
         imageUrl: './Photos/Projects/Current/Rosebush/01.jpg',
         category: 'Current',
         description: 'Description for Rose bush project.',
-        medium: '', // e.g., "conté, charcoal, pastel, acrylic on mylar"
-        dimensions: '', // e.g., "18 × 16 in"
+        medium: 'Mixed Media',
+        dimensionsCm: '180 × 120 × 150 cm',
+        dimensionsIn: '70.87 × 47.24 × 59.06 inches',
         // To add YouTube videos, uncomment the line below and replace the IDs
         youtubeVideoIds: ['ixTNBstU7ZY', 'ziY3TN7R-ao'],
         // To add local videos, uncomment the line below and add the file paths
@@ -43,8 +44,9 @@ const allArtwork = [
         imageUrl: './Photos/Projects/Current/Inside/01.jpg',
         category: 'Current',
         description: 'Description for Inside project.',
-        medium: 'plyester, acrylic, latex on canvas', // fill later
-        dimensions: '18 × 16 in', // fill later
+        medium: 'Ceramic · Mixed Media',
+        dimensionsCm: '150 × 110 × 80 cm',
+        dimensionsIn: '59.06 × 43.31 × 31.50 inches',
         // To add YouTube videos, uncomment the line below and replace the IDs
         youtubeVideoIds: ['tRTScR9hi0Q'],
         //localVideos: ['./Photos/Projects/Current/2-Inside/video.mp4']
@@ -75,8 +77,9 @@ const allArtwork = [
         imageUrl: './Photos/Projects/Current/Leyers/01.jpg',
         category: 'Current',
         description: 'Description for Leyer-s project.',
-        medium: '', // fill later
-        dimensions: '', // fill later
+        medium: 'Mixed Media',
+        dimensionsCm: '120 × 180 × 160 cm',
+        dimensionsIn: '47.24 × 70.81 × 62.99 inches',
         // To add YouTube videos, uncomment the line below and replace the IDs
         youtubeVideoIds: ['aUvL3Rvcoho'],
         // To add local videos, uncomment the line below and add the file paths
@@ -105,12 +108,13 @@ const allArtwork = [
         {
         id: 6,
         title: 'Privacy',
-        year: '2018',
+        year: '2013',
         imageUrl: './Photos/Projects/Archive/Privacy/05.jpg',
         category: 'Archive',
         description: 'A study of personal space and boundaries in the modern world.',
-        medium: '', // fill later
-        dimensions: '', // fill later
+        medium: 'Mixed Media',
+        dimensionsCm: '25 × 10 × 2 cm',
+        dimensionsIn: '9.84 × 3.94 × 0.79 inches',
         // To add YouTube videos, uncomment the line below and replace the IDs
         // youtubeVideoIds: ['YOUTUBE_ID_1'],
         // To add local videos, uncomment the line below and add the file paths
@@ -129,12 +133,13 @@ const allArtwork = [
     {
         id: 4,
         title: 'Eating and Being eaten',
-        year: '2018',
+        year: '2014',
         imageUrl: './Photos/Projects/Archive/Eating/01.jpg',
         category: 'Archive',
         description: 'A project exploring themes of consumption and existence.',
-        medium: '', // fill later
-        dimensions: '', // fill later
+        medium: 'Mixed Media',
+        dimensionsCm: '600 × 180 × 150 cm',
+        dimensionsIn: '236.22 × 70.87 × 59.06 inches',
         // To add YouTube videos, uncomment the line below and replace the IDs
         youtubeVideoIds: ['OL1yjthqsgk', '-Xz6_6oipFE'],
         // To add local videos, uncomment the line below and add the file paths
@@ -160,12 +165,13 @@ const allArtwork = [
     {
         id: 5,
         title: 'Encountering',
-        year: '2020',
+        year: '2016',
         imageUrl: './Photos/Projects/Archive/Flatland/01.jpg',
         category: 'Archive',
         description: 'An exploration of landscapes and perception.',
-        medium: '', // fill later
-        dimensions: '', // fill later
+        medium: 'Mixed Media',
+        dimensionsCm: '110 × 80 × 60 cm',
+        dimensionsIn: '43.31 × 31.50 × 23.62 inches',
         // To add YouTube videos, uncomment the line below and replace the IDs
         youtubeVideoIds: ['vgxLeBk8_Lc'],
         //localVideos: ['./Photos/Projects/Archive/Flatland/vid1.mp4'],
@@ -387,15 +393,21 @@ const Lightbox = ({ images, startIndex, onClose, artwork }) => {
             <div className="w-[96vw] flex flex-col items-center justify-center">
                 <img src={images[currentIndex]} alt="Fullscreen artwork" className="max-h-[82vh] max-w-[90vw] object-contain" />
                 {artwork && (
-                    <div className="mt-3 text-center text-gray-300 bg-black/60 rounded-md px-4 py-3">
+                    <div className="mt-3 text-center text-gray-300">
                         {artwork.year && (
                             <div className="text-base leading-tight">{artwork.year}</div>
+                        )}
+                        {artwork.title && (
+                            <div className="mt-1 text-base font-semibold leading-snug">{artwork.title}</div>
                         )}
                         {artwork.medium && (
                             <div className="mt-1 text-sm leading-snug">{artwork.medium}</div>
                         )}
-                        {artwork.dimensions && (
-                            <div className="mt-1 text-sm leading-snug">{artwork.dimensions}</div>
+                        {artwork.dimensionsCm && (
+                            <div className="mt-1 text-sm leading-snug">{artwork.dimensionsCm}</div>
+                        )}
+                        {artwork.dimensionsIn && (
+                            <div className="mt-1 text-sm leading-snug">{artwork.dimensionsIn}</div>
                         )}
                     </div>
                 )}

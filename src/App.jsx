@@ -381,13 +381,13 @@ const Lightbox = ({ images, startIndex, onClose, artwork }) => {
     }, []);
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50">
             <button onClick={onClose} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
             <button onClick={handlePrev} className="absolute left-4 text-white text-4xl font-bold">&#8249;</button>
-            <img src={images[currentIndex]} alt="Fullscreen artwork" className="max-h-[90vh] max-w-[90vw] object-contain" />
+            <img src={images[currentIndex]} alt="Fullscreen artwork" className="max-h-[82vh] max-w-[90vw] object-contain" />
             {artwork && (
-                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 max-w-[96vw] text-center px-4">
-                    <div className="text-gray-300">
+                <div className="absolute bottom-8 left-1/2 -translate-x-1/2 max-w-[96vw] text-center px-4">
+                    <div className="inline-block text-gray-300 bg-black/60 rounded-md px-3 py-2">
                         <div className="font-semibold">{artwork.title}{artwork.year ? `, ${artwork.year}` : ''}</div>
                         {(artwork.medium || artwork.dimensions) && (
                             <div className="text-sm opacity-90 mt-1">{[artwork.medium, artwork.dimensions].filter(Boolean).join(' · ')}</div>

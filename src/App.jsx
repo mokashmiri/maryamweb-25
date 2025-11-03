@@ -373,6 +373,15 @@ const Lightbox = ({ images, startIndex, onClose }) => {
             <button onClick={onClose} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
             <button onClick={handlePrev} className="absolute left-4 text-white text-4xl font-bold">&#8249;</button>
             <img src={images[currentIndex]} alt="Fullscreen artwork" className="max-h-[90vh] max-w-[90vw] object-contain" />
+            {/**
+             * Caption placeholder (intentionally disabled for now)
+             * When ready, replace with real metadata per artwork, e.g.:
+             *
+             * <div className="max-w-[96vw] mx-auto mt-2 text-center text-gray-200">
+             *   <div className="text-white font-semibold">Title, Year</div>
+             *   <div className="text-sm opacity-90 mt-1">Medium · Dimensions</div>
+             * </div>
+             */}
             <button onClick={handleNext} className="absolute right-4 text-white text-4xl font-bold">&#8250;</button>
         </div>
     );

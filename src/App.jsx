@@ -387,10 +387,15 @@ const Lightbox = ({ images, startIndex, onClose, artwork }) => {
             <img src={images[currentIndex]} alt="Fullscreen artwork" className="max-h-[82vh] max-w-[90vw] object-contain" />
             {artwork && (
                 <div className="absolute bottom-8 left-1/2 -translate-x-1/2 max-w-[96vw] text-center px-4">
-                    <div className="inline-block text-gray-300 bg-black/60 rounded-md px-3 py-2">
-                        <div className="font-semibold">{artwork.title}{artwork.year ? `, ${artwork.year}` : ''}</div>
-                        {(artwork.medium || artwork.dimensions) && (
-                            <div className="text-sm opacity-90 mt-1">{[artwork.medium, artwork.dimensions].filter(Boolean).join(' · ')}</div>
+                    <div className="inline-block text-gray-300 bg-black/60 rounded-md px-4 py-3">
+                        {artwork.year && (
+                            <div className="text-base leading-tight">{artwork.year}</div>
+                        )}
+                        {artwork.medium && (
+                            <div className="mt-1 text-sm leading-snug">{artwork.medium}</div>
+                        )}
+                        {artwork.dimensions && (
+                            <div className="mt-1 text-sm leading-snug">{artwork.dimensions}</div>
                         )}
                     </div>
                 </div>

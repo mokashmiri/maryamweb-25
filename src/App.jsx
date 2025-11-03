@@ -346,8 +346,8 @@ const ArtworkDetail = ({ artwork, onBack, onImageSelect }) => (
     </main>
 );
 
-// Fullscreen Lightbox Component (with bottom caption)
-const Lightbox = ({ images, startIndex, onClose, artwork }) => {
+// Fullscreen Lightbox Component
+const Lightbox = ({ images, startIndex, onClose }) => {
     const [currentIndex, setCurrentIndex] = useState(startIndex);
 
     const handleNext = () => {
@@ -369,22 +369,10 @@ const Lightbox = ({ images, startIndex, onClose, artwork }) => {
     }, []);
 
     return (
-        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
             <button onClick={onClose} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
             <button onClick={handlePrev} className="absolute left-4 text-white text-4xl font-bold">&#8249;</button>
-            <div className="w-[96vw]">
-                <div className="w-[96vw] h-[calc(100vh-140px)] flex items-center justify-center">
-                    <img src={images[currentIndex]} alt="Fullscreen artwork" className="h-full max-w-[96vw] object-contain" />
-                </div>
-                {artwork && (
-                    <div className="max-w-[96vw] mx-auto mt-2 text-center text-gray-200">
-                        <div className="text-white font-semibold">{artwork.title}{artwork.year ? `, ${artwork.year}` : ''}</div>
-                        {artwork.description && (
-                            <div className="text-sm opacity-90 mt-1">{artwork.description}</div>
-                        )}
-                    </div>
-                )}
-            </div>
+            <img src={images[currentIndex]} alt="Fullscreen artwork" className="max-h-[90vh] max-w-[90vw] object-contain" />
             <button onClick={handleNext} className="absolute right-4 text-white text-4xl font-bold">&#8250;</button>
         </div>
     );
@@ -496,7 +484,7 @@ export default function App() {
     };
 
     const projectLightbox = lightboxStartIndex !== null && selectedArtwork ? (
-        <Lightbox images={selectedArtwork.images} artwork={selectedArtwork} startIndex={lightboxStartIndex} onClose={() => setLightboxStartIndex(null)} />
+        <Lightbox images={selectedArtwork.images} startIndex={lightboxStartIndex} onClose={() => setLightboxStartIndex(null)} />
     ) : null;
 
     const studioLightbox = studioLightboxIndex !== null ? (

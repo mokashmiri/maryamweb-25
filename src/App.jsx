@@ -394,7 +394,7 @@ const Lightbox = ({ images, startIndex, onClose, artwork }) => {
             <div className="w-[96vw] flex flex-col items-center justify-center">
                 <img src={images[currentIndex]} alt="Fullscreen artwork" className="max-h-[82vh] max-w-[90vw] object-contain" />
                 {artwork && (
-                    <div className="mt-3 text-center text-gray-300">
+                    <div className="mt-3 text-center text-gray-500">
                         {artwork.year && (
                             <div className="text-base leading-tight">{artwork.year}</div>
                         )}
